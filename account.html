@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notespool</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="lowPad"><img src="img/logo.png" width="50"></div>
+            <div class="centerWrap">
+                <nav>
+                    <ul>
+                        <li><a href="dashboard.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
+                        <li><a href="admin.html">ADMIN</a></li>
+                        <li><a href="quiz.html">QUIZ</a></li>
+                        <li><a href="account.html">MY ACCOUNT</a></li>
+                        <li><a href="index.html">LOGOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="container">
+            <div id="leftGR">
+                <div id="profilePictureBox">
+                    <img src="img/newUser.png" width="220">
+                    <button><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></button>
+                    <p>Connect</p>
+                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+                    <button>Edit Email</button>
+                    <button>Edit Password</button>
+                </div>     
+            </div>
+            <div id="rightGR">
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'Recent')" id="defaultOpen">RECENT</button>
+                    <button class="tablinks" onclick="openTab(event, 'Top')">TOP</button>
+                    <button class="tablinks" onclick="openTab(event, 'Bookmarked')">BOOKMARKED</button>
+                    <button class="tablinks" onclick="openTab(event, 'Comments')">COMMENTS</button>
+                </div>
+                <div id="Recent" class="tabcontent">
+                    Show most recent posts and comments
+                </div>
+
+                <div id="Top" class="tabcontent">
+                   Show top posts
+                </div>
+                <div id="Bookmarked" class="tabcontent">
+                    Show bookmarked content
+                </div>
+                <div id="Comments" class="tabcontent">
+                    show all comments
+                </div>
+              <script src="js/tab.js"></script>
+            </div>
+        </div>
+    </body>
+</html>
