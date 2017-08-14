@@ -20,7 +20,7 @@
                         <li><a href="admin.html">ADMIN</a></li>
                         <li><a href="quiz.html">QUIZ</a></li>
                         <li><a href="account.html">MY ACCOUNT</a></li>
-                        <li><a href="index.html">LOGOUT</a></li>
+                        <li><a href="logout.php">LOGOUT</a></li>
                         <?php
                             echo "<li>logged in as ",$_SESSION['name'],"</li>";
                         ?>

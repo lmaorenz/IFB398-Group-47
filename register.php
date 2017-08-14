@@ -1,7 +1,7 @@
 <html>
     <body>
 <?php
-
+if (isset($_POST['submit'])) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
 
@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     catch(PDOException $e) {
         echo $sql . "<br>" . $e->getMessage();
     }
+}
 }
     
 
