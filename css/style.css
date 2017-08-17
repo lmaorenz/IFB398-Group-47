@@ -1,0 +1,444 @@
+/* CSS for notespool */
+
+/* CSS elements */
+html  {
+    height:100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #49a5e6;
+    color: #888;
+}
+body  {
+   margin: 0;
+}
+header  {
+    width:100%;
+    height:70px;
+    
+    background-color: white;
+    margin: 0;
+    padding:0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+nav ul  {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow-y:hidden;
+}
+nav ul li{
+    display: inline-block;
+    width:auto;
+    height: 20px;
+    padding:25px;
+    float:left;
+    font-size: 20px;
+    color: #49a5b6;
+}
+nav ul li img  {
+    padding:0;
+}
+nav ul li a  {
+    color: #ddd;
+    text-decoration: none;
+}
+nav ul li a:hover  {
+    color: #49a5e6;
+    transition: color 0.07s ease-out;
+}
+input, select , textarea, submit {
+    margin: 10px;
+    padding:15px;
+    border-radius: 5px;
+    border:none;
+    font-size: 16px;
+}
+
+input[type=text],[type=number],[type=password]  {
+    box-shadow:inset 0 0 10px rgba(0,0,0,0.5); /* shadowing for design */
+    
+}
+footer { 
+	width: 100%;
+	background-color: #6babe5;
+	overflow: hidden;
+	height: 70px; 
+	color:white;
+}
+footer .centerWrap  {
+    max-width:1012px;
+    margin:auto;
+
+}
+footer .centerWrap p  {
+    text-align: center;
+}
+form button  {
+    background-color: #7ff49e;
+    height: 50px;
+    width: 150px;
+    color:white;
+    float:right;
+    border-radius: 25px 25px 25px 5px;
+    margin: 10px;
+    padding:15px;
+    border:none;
+    font-size: 16px;
+}
+
+/*------------------------------------ ID elements ------------------------------------ */
+#container  {
+    width:1012px;
+    margin:auto;
+    min-height: 900px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    background-color: white;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#container h1, h2  {
+    position: relative;
+    float: left;
+    margin: 20px;
+    font-weight: 200;
+}
+#container h2  {
+    float:right;
+    font-weight: 100;
+}
+#center  {
+    margin:auto;
+    position:fixed;
+    top: 50%;
+    left:50%;
+    margin-top: -250px;
+    margin-left: -210px;
+    z-index: 1;
+}
+#center h1  {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    display: block;
+    
+}
+#right  {
+    margin:20px;
+    float:right;
+}
+#sidePane  {
+    
+}
+#leftGR  {
+    width:240px;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+}
+#rightGR  {
+    width:772px;
+    height:100%;
+    position: absolute;
+    left:240px;
+}
+
+#profilePictureBox  {
+    width:220px;
+    height:255px;
+    margin:10px; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+#profilePictureBox button  {
+    width:100%;
+    height:35px;
+    color:white;
+    background-color:#6babe5;
+    border:none;
+    
+}
+
+#profilePictureBox img  {
+    display:block;
+}
+#background  {
+    background: url("../img/index.jpg") no-repeat fixed;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+#logoBox  {
+    display: block;
+    width:240px;
+    margin:0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#loginBox, #registerBox  {
+    width:420px;
+    max-height:215px;
+    background-color: #002d74;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    
+}
+#registerBox  {
+    max-height: 50px;
+    margin-top: 20px;
+    transition: margin-top 0.35s ease-in-out, max-height 0.35s ease-in-out 0.35s;
+}
+#registerBox button  {
+    width: 420px;
+    height:50px;
+    border: 10px 10px 0 0;
+    color: white;
+    background-color: #7ff49e;
+    border: none;
+}
+#center input[type=text], input[type=password]  {
+    width:370px;
+}
+#center input[type=submit]  {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    margin:20px 0 0 0;
+}
+#contentSpace, #commentsContainer  {
+    width:992px;
+    margin: 10px;
+    height:auto;
+    
+}
+#commentsContainer  {
+    float:left;
+    border-bottom: 2px solid #49a5e6;
+}
+#contentSpace img  {
+    border: 3px solid #49a5e6;
+    border-radius: 10px 10px 5px 10px;
+}
+#shareBox, #voteBox  {
+    margin: 10px;
+    width:46%;
+}
+#shareBox  {
+    float:left;
+    padding-left: 16px; 
+}
+#shareBox i:hover  {
+    color:#6babe5;
+}
+#voteBox  {
+    float:right;
+    text-align: right;
+    padding-right:16px;
+}
+#voteBox i:nth-Child(1)  {
+    margin-right:15px;
+}
+#voteBox i:nth-Child(1):hover  {
+    color: #7ff49e;
+}
+#voteBox i:nth-Child(2):hover  {
+    color: #db6f7c
+}
+#writeBox  {
+    width:100%;
+    min-height: 150px;
+    float:left;
+}
+#writeBox textarea{
+    width:956px;
+    max-width:956px;
+    border: 3px solid #6babe5;
+    margin-bottom: 0;
+    display: block;
+    border-radius:10px 10px 0 0;
+    height: 150px;
+}
+#writeBox input[type=submit]  {
+    margin:10px;
+    margin-top: 0;
+    background-color: #6babe5;
+    color: white;
+    border-radius: 0 0 10px 5px;
+    width:992px;
+}
+
+
+/*------------------------------------ Class elements ---------------------------------*/
+.overlay  {
+    background: rgba(0,45,116,0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.nBlue  {
+    color: #49a5e6;
+}
+.nBlue2  {
+    color: #6babe5;
+}
+.lowPad  {
+    padding: 10px;
+    width:0;
+    float:left;
+}
+.centerWrap  {
+    max-width:1012px;
+    height:100%;
+    margin:auto;
+}
+.centerWrap p  {
+    margin:20px;
+}
+.content  {
+    margin: 10px;
+    width:992px;
+    height:100px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    position: relative;
+    border-radius: 50px 50px 50px 10px;
+}
+
+.score  {
+    float: left;
+    width: 100px;
+    height:80px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-top:20px;
+    position: absolute;
+}
+.score i  {
+    color:#7ff49e;
+}
+.details  {
+    float:right;
+    width:892px;
+    height:100%;
+    color: #bbb;
+    display: flex;
+    align-items: center;
+}
+.details h1  {
+    font-weight: 200;
+    padding: 20px 20px;
+    margin: auto;
+}
+
+.tab {
+    overflow: hidden;
+    margin:10px;
+    margin-bottom: 0;
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    border-radius: 10px 10px 0 0;
+    color: #bbb;
+}
+.tab button:hover:not(.active) {
+    height: 43px;
+    color:#6babe5;
+    border-bottom: 3px inset #49a5e6;
+}
+.tab button.active {
+    background-color: #49a5e6;
+    color:white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    margin:0 10px;
+    border-radius:0 0 5px 10px;
+    border: 2px solid #49a5e6;
+}
+.clearFix  {
+    clear:both;
+}
+.commentBox  {
+    position: relative;
+    min-height:120px;
+    float:left;
+    width:992px;
+}
+.repliesBox  {
+    margin-left:148px;
+    min-height:120px;
+    float:left;
+    width: 844px;
+}
+.repliesBox:nth-last-child() {
+    border-bottom: 5px solid ##6babe5;
+}
+.userInfo  {
+    width:100px;
+    height:100px;
+    float:left;
+    text-align: center;
+    padding:10px;
+}
+.userInfo p  {
+    margin:0 auto;
+    padding: 0;
+    display: block;
+}
+.comment  {
+    width: 872px;
+    min-height:120px;
+    margin-left:120px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    word-break: break-all; 
+    word-wrap: break-word;
+}
+.repliesBox .comment  {
+    width: 724px;
+}
+.comment p  {
+    margin:20px;
+    width:100%;
+}
+span.rate  {
+    width:500px;
+    float:left;
+}
+.commentRate  {
+   width:70px;
+   text-align: center;
+    float:left;
+  
+}
+.drop  {
+    display: none;
+    overflow:hidden;
+    max-height: 0;
+    transition:max-height 0.35s ease-out;
+}
+
+/* -------------------------------- ANIMATIONS ---------------------------------- */
+
+
